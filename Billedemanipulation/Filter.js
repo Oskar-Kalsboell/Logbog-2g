@@ -1,7 +1,7 @@
 let img; /*Definere variabel img, så den kan bruges senere*/
 
 function preload(){ /*Preloader billledet så det ikke skal gøre seneres,så det går hurtigere*/
-  img = loadImage('MP på tur.jpeg');
+  img = loadImage('tiger.jpg');
 }
 
 function setup(){
@@ -21,7 +21,7 @@ function draw(){
 function ownFilter(){
     let rodfarve = (map(mouseX-(windowWidth/2) , 0, 2*w, 0,1.2)); //definerer variablen til at være musens position.
     //-0.5 bredde for at flytte origo.
-    let blofarve = (map(mouseY-(windowHeight/2), 0, 2*w, 0,1.2)); // Laver variebel, definerer den til at
+    let blofarve = (map(mouseY-(windowHeight/2), 0, 2*w, 0,1.2)); // Laver variabel, definerer den til at
     // passe med mousen + window hight / wiiht.
     // Laver og intrvalllet til 0,1.2 så programet kører hurtigere.
     let gronfarve = (rodfarve*(-1)); //Definerer variablen ligesom ovenstående,
